@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - exercicio7",
+            "request": "launch",
+            "mainClass": "exercicio7",
+            "projectName": "ExercicioJava1_cb194ed3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - fibinacci",
+            "request": "launch",
+            "mainClass": "fibinacci",
+            "projectName": "ExercicioJava1_cb194ed3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - exercicio4",
             "request": "launch",
             "mainClass": "exercicio4",
