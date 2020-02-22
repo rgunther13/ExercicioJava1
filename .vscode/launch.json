@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TesteScanner",
+            "request": "launch",
+            "mainClass": "TesteScanner",
+            "projectName": "ExercicioJava1_cb194ed3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - exercicio7",
             "request": "launch",
             "mainClass": "exercicio7",
