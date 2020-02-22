@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ehmaior",
+            "request": "launch",
+            "mainClass": "ehmaior",
+            "projectName": "ExercicioJava1_cb194ed3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ssmdr",
+            "request": "launch",
+            "mainClass": "ssmdr",
+            "projectName": "ExercicioJava1_cb194ed3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TesteScanner2",
+            "request": "launch",
+            "mainClass": "TesteScanner2",
+            "projectName": "ExercicioJava1_cb194ed3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TesteScanner",
             "request": "launch",
             "mainClass": "TesteScanner",
