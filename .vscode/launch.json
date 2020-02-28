@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - mediaehmaior",
+            "request": "launch",
+            "mainClass": "mediaehmaior",
+            "projectName": "ExercicioJava1_d79967d1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ehmaior",
             "request": "launch",
             "mainClass": "ehmaior",
