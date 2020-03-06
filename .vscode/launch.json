@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MultiplicacaoDeMatrizes",
+            "request": "launch",
+            "mainClass": "MultiplicacaoDeMatrizes",
+            "projectName": "ExercicioJava1_d79967d1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MultiplicacaoVetorMatriz",
             "request": "launch",
             "mainClass": "MultiplicacaoVetorMatriz",
