@@ -14,14 +14,15 @@ class mediaehmaior{
 
         System.out.println("Digite um numero de ponto flutuante: ");
         final float c = input.nextFloat();
-        input.nextLine();
-     
+        input.nextLine();     
                 
         System.out.println("A soma dos dois numeros eh: " + (a+b+c));
         System.out.println("A media dos 3 numeros eh: " + ((a+b+c)/3));
         System.out.println("A multiplicacao dos 3 numeros eh: " + (a*b*c));
+
         float maior;
         float menor;
+        
         if (a > b && a >c){
             maior = a;
             if (b < c){

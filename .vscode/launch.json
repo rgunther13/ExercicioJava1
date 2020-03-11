@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MultiplicacaoDeMatrizes",
+            "request": "launch",
+            "mainClass": "MultiplicacaoDeMatrizes",
+            "projectName": "ExercicioJava1_d79967d1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MultiplicacaoVetorMatriz",
+            "request": "launch",
+            "mainClass": "MultiplicacaoVetorMatriz",
+            "projectName": "ExercicioJava1_d79967d1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MenorMaiorValorMatriz",
+            "request": "launch",
+            "mainClass": "MenorMaiorValorMatriz",
+            "projectName": "ExercicioJava1_d79967d1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SomaVetores",
+            "request": "launch",
+            "mainClass": "SomaVetores",
+            "projectName": "ExercicioJava1_d79967d1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExemploVetorMatriz",
+            "request": "launch",
+            "mainClass": "ExemploVetorMatriz",
+            "projectName": "ExercicioJava1_d79967d1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - mediaehmaior",
             "request": "launch",
             "mainClass": "mediaehmaior",
