@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - coversorboh",
+            "request": "launch",
+            "mainClass": "coversorboh",
+            "projectName": "ExercicioJava1_280ee33"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MultiplicacaoDeMatrizes",
+            "request": "launch",
+            "mainClass": "MultiplicacaoDeMatrizes",
+            "projectName": "ExercicioJava1_280ee33"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MultiplicacaoDeMatrizes",
             "request": "launch",
             "mainClass": "MultiplicacaoDeMatrizes",
