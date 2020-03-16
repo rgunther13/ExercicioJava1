@@ -2,40 +2,38 @@ import java.util.Scanner;
 
 class coversorboh{
 
-    public static void binario(int a){
-        int resto;
-        String result = "";
-        String aux = "";
+    public static String binario(int a, int resto,String result, String aux){
            
-        do{
+        if (a <= 0)
+            return result;
+        else{
             resto = a%2;
             a = (int)a/2;
             result =  Integer.toString(resto) + aux;
             aux = result;
-        }while (a > 0);
-        System.out.printf("O número Convertido para Binário é: 0b%s", result); 
+            return binario(a, resto, result, aux);
+        }
+      
     }
 
-    public static void octal(int a){
-        int resto;
-        String result = "";
-        String aux = "";
-           
-        do{
+    public static String octal(int a, int resto,String result, String aux){
+        if (a <= 0)
+            return result;          
+        else{
             resto = a%8;
             a = (int)a/8;
             result =  Integer.toString(resto) + aux;
             aux = result;
-        }while (a > 0);
-        System.out.printf("O número Convertido para Octal é: 0o%s", result); 
+            return octal(a, resto, result, aux);
+        }
+         
     }
 
-    public static void hexa(int a){
-        int resto;
-        String result = "", letra="";
-        String aux = "";
-           
-        do{
+    public static String hexa(int a, int resto,String result, String aux){
+        String letra="";
+        if (a <= 0)
+        return result;          
+        else{ 
             resto = a%16;
             a = (int)a/16;
             if (resto >9){
@@ -52,21 +50,25 @@ class coversorboh{
                 if (resto == 15)
                 letra = "F";
                 result =  letra + aux;
-            }else
+            }else{
                 result =  Integer.toString(resto) + aux;
-            aux = result;
-        }while (a > 0);
-        System.out.printf("O número Convertido para Hexadecimal é: 0x%s", result); 
+                aux = result;
+            }
+            return hexa(a, resto, result, aux);
+        }
+       
     }
     public static void main(final String[] args) {
+        final int resto = 0;
+        final String result = "", aux = "";
         final Scanner input = new Scanner(System.in);
         System.out.println("Digite um numero decimal a ser convertido: ");
-        int a = input.nextInt();
+        final int a = input.nextInt();
         input.nextLine();
-        binario(a);
+        System.out.printf("O número Convertido para Binário é: 0b%s", (binario(a, resto, result, aux)));
         System.out.printf("\n");
-        octal(a);
+        System.out.printf("O número Convertido para Octal é: 0o%s", (octal(a, resto, result, aux)));
         System.out.printf("\n");
-        hexa(a);
+        System.out.printf("O número Convertido para Hexadecimal é: 0x%s", (hexa(a, resto, result, aux)));
     }
 }
