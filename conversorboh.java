@@ -50,6 +50,7 @@ class coversorboh{
                 if (resto == 15)
                 letra = "F";
                 result =  letra + aux;
+                aux = result;
             }else{
                 result =  Integer.toString(resto) + aux;
                 aux = result;
@@ -59,16 +60,42 @@ class coversorboh{
        
     }
     public static void main(final String[] args) {
-        final int resto = 0;
+        int resto = 0;
+        int opt = 1;
         final String result = "", aux = "";
         final Scanner input = new Scanner(System.in);
         System.out.println("Digite um numero decimal a ser convertido: ");
         final int a = input.nextInt();
         input.nextLine();
-        System.out.printf("O número Convertido para Binário é: 0b%s", (binario(a, resto, result, aux)));
-        System.out.printf("\n");
-        System.out.printf("O número Convertido para Octal é: 0o%s", (octal(a, resto, result, aux)));
-        System.out.printf("\n");
-        System.out.printf("O número Convertido para Hexadecimal é: 0x%s", (hexa(a, resto, result, aux)));
+        while (opt !=0){
+            System.out.println();
+            System.out.println("######Coversão para:######");
+            System.out.println("#     (1) - Binário      #");
+            System.out.println("#     (2) - Octal        #");
+            System.out.println("#     (3) - Hexadecimal  #");
+            System.out.println("#     (0) - Sair         #");
+            System.out.println("##########################");
+            opt = input.nextInt();
+            input.nextLine();
+            
+                switch (opt){
+                    case 1:
+                        System.out.printf("O número Convertido para Binário é: 0b%s", (binario(a, resto, result, aux)));
+                        System.out.println();
+                        break;
+                    case 2:
+                        System.out.printf("O número Convertido para Octal é: 0o%s", (octal(a, resto, result, aux)));
+                        System.out.println();
+                        break;
+                    case 3:
+                        System.out.printf("O número Convertido para Hexadecimal é: 0x%s", (hexa(a, resto, result, aux)));
+                        System.out.println();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        System.out.println("Conversão terminada, até logo!!!");
+        
     }
 }
