@@ -12,7 +12,7 @@ public static void main(String[] args) {
     
        for (int i = n - 1; i >=0 ; i--)
             if (i % 2 == 0)
-                r = r + i;           
+                r += i;           
         
     System.out.printf("O resultado da soma dos números pares menores que %d é: %d ",n, r);
 
