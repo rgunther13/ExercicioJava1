@@ -11,6 +11,7 @@ public static void main(String[] args) {
     System.out.println("Digite a potência: ");
     int p = input.nextInt();
     input.nextLine();
+    input.close();
     
        for (int i = 1; i <= p; i++)
             r = (n * r);           

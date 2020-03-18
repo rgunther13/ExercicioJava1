@@ -13,7 +13,7 @@ class TesteScanner{
         System.out.printf("%f \n", b);
 
         input.nextLine();
-        
+        input.close();
         System.out.println("Digite um nome: ");
         String nome = input.nextLine();
         System.out.print(nome);

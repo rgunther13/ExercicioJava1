@@ -11,6 +11,7 @@ class ssmdr{
         System.out.println("Digite outro numero de ponto flutuante: ");
         float b = input.nextFloat();
         input.nextLine();
+        input.close();
                 
         System.out.println("A soma dos dois numeros eh: " + (a+b));
         System.out.println("A subtracao dos dois numeros eh: " + (a-b));

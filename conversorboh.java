@@ -92,6 +92,7 @@ class coversorboh{
                         break;
                 }
             }
+            input.close();
         System.out.println("Conversão terminada, até logo!!!");
         
     }

@@ -14,6 +14,7 @@ public static void main(String[] args) {
     System.out.println("Digite outro numero decimal: ");
     int b = input.nextInt();
     input.nextLine();
+    input.close();
     if (a < b)
         menor = a;
     else

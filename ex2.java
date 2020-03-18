@@ -15,6 +15,7 @@ class ex2{
             
             System.out.println("Digite um numero decimal para calcular o Fatorial !N: ");
             int n = input.nextInt();
+            input.close();
                
             System.out.printf("O Fatorial de %d é: %d ", n, (fatorial(n)));
 

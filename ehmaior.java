@@ -11,6 +11,7 @@ class ehmaior{
         System.out.println("Digite outro numero inteiro: ");
         int b = input.nextInt();
         input.nextLine();
+        input.close();
 
         if (a == b)
             System.out.println("Os numeros sao IGUAIS!!!");

@@ -8,6 +8,7 @@ public static void main(String[] args) {
     System.out.println("Digite um numero decimal: ");
     int n = input.nextInt();
     input.nextLine();
+    input.close();
     
     
        for (int i = n - 1; i >=0 ; i--)

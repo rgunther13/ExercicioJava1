@@ -6,7 +6,7 @@ class MultiplicacaoVetorMatriz{
         int[][] matriz = new int[3][3];
         int[] vetor = {3, 4, 5};
         int[] vetor2 = new int[3];
-        int valor = 0;
+        
         
         Random rand = new Random();
         

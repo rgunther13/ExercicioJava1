@@ -14,7 +14,8 @@ class mediaehmaior{
 
         System.out.println("Digite um numero de ponto flutuante: ");
         final float c = input.nextFloat();
-        input.nextLine();     
+        input.nextLine();
+        input.close();     
                 
         System.out.println("A soma dos dois numeros eh: " + (a+b+c));
         System.out.println("A media dos 3 numeros eh: " + ((a+b+c)/3));
