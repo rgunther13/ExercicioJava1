@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ex4",
+            "request": "launch",
+            "mainClass": "ex4",
+            "projectName": "ExercicioJava1_280ee33"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - fibinacci",
             "request": "launch",
             "mainClass": "fibinacci",
