@@ -2,34 +2,32 @@ import java.util.Scanner;
 
 class coversorboh{
 
-    public static String binario(int a, int resto,String result, String aux){
+    public static String binario(int a, int resto,String result){
            
         if (a <= 0)
             return result;
         else{
             resto = a%2;
             a = (int)a/2;
-            result =  Integer.toString(resto) + aux;
-            aux = result;
-            return binario(a, resto, result, aux);
+            result =  Integer.toString(resto) + result;
+            return binario(a, resto, result);
         }
       
     }
 
-    public static String octal(int a, int resto,String result, String aux){
+    public static String octal(int a, int resto,String result){
         if (a <= 0)
             return result;          
         else{
             resto = a%8;
             a = (int)a/8;
-            result =  Integer.toString(resto) + aux;
-            aux = result;
-            return octal(a, resto, result, aux);
+            result =  Integer.toString(resto) + result;
+            return octal(a, resto, result);
         }
          
     }
 
-    public static String hexa(int a, int resto,String result, String aux){
+    public static String hexa(int a, int resto,String result){
         String letra="";
         if (a <= 0)
         return result;          
@@ -49,21 +47,20 @@ class coversorboh{
                 letra = "E";
                 if (resto == 15)
                 letra = "F";
-                result =  letra + aux;
-                aux = result;
+                result =  letra + result;
+                
             }else{
-                result =  Integer.toString(resto) + aux;
-                aux = result;
+                result =  Integer.toString(resto) + result;
             }
-            return hexa(a, resto, result, aux);
+            return hexa(a, resto, result);
         }
        
     }
     public static void main(final String[] args) {
         int resto = 0;
         int opt = 1;
-        final String result = "", aux = "";
-        final Scanner input = new Scanner(System.in);
+        final String result = "";
+        var input = new Scanner(System.in);
         System.out.println("Digite um numero decimal a ser convertido: ");
         final int a = input.nextInt();
         input.nextLine();
@@ -80,15 +77,15 @@ class coversorboh{
             
                 switch (opt){
                     case 1:
-                        System.out.printf("O número Convertido para Binário é: 0b%s", (binario(a, resto, result, aux)));
+                        System.out.printf("O número Convertido para Binário é: 0b%s", (binario(a, resto, result)));
                         System.out.println();
                         break;
                     case 2:
-                        System.out.printf("O número Convertido para Octal é: 0o%s", (octal(a, resto, result, aux)));
+                        System.out.printf("O número Convertido para Octal é: 0o%s", (octal(a, resto, result)));
                         System.out.println();
                         break;
                     case 3:
-                        System.out.printf("O número Convertido para Hexadecimal é: 0x%s", (hexa(a, resto, result, aux)));
+                        System.out.printf("O número Convertido para Hexadecimal é: 0x%s", (hexa(a, resto, result)));
                         System.out.println();
                         break;
                     default:
