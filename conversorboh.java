@@ -29,33 +29,23 @@ class coversorboh{
 
     public static String hexa(int a, int resto,String result){
         String letra="";
+        String dic[] = {"A", "B", "C", "D", "E", "F"};
         if (a <= 0)
         return result;          
         else{ 
             resto = a%16;
             a = (int)a/16;
             if (resto >9){
-                if (resto == 10)
-                letra = "A";
-                if (resto == 11)
-                letra = "B";
-                if (resto == 12)
-                letra = "C";
-                if (resto == 13)
-                letra = "D";
-                if (resto == 14)
-                letra = "E";
-                if (resto == 15)
-                letra = "F";
+                letra = dic[resto-10];
                 result =  letra + result;
-                
-            }else{
+            }
+            else
                 result =  Integer.toString(resto) + result;
             }
             return hexa(a, resto, result);
         }
        
-    }
+    
     public static void main(final String[] args) {
         int resto = 0;
         int opt = 1;
