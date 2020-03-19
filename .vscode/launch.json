@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ex8",
+            "request": "launch",
+            "mainClass": "ex8",
+            "projectName": "ExercicioJava1_e55fc5b8"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ex4",
             "request": "launch",
             "mainClass": "ex4",
