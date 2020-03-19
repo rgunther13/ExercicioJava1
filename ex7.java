@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class coversorboh{
+class ex7{
 
     public static String binario(int a, int resto,String result){
            
